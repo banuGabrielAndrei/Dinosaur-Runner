@@ -32,7 +32,7 @@ let dinosaur = {
     dinosaurY: DINO_Y,
     dinosaurWidth: DINO_WIDTH,
     dinosaurHeight: DINO_WIDTH * 2,
-    speed : DINO_SPEED,
+    speed: DINO_SPEED,
 
     drawDinosaur() {
         ctx.drawImage(dinosaurImage, this.dinosaurX, this.dinosaurY, this.dinosaurWidth, this.dinosaurHeight);
