@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>DINOSAUR RUNNER</title>
+  </head>
+  <body>
+    <h1>Dinosaur Runner</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <canvas height="400px" width="1000px" id="canvas"></canvas>
+            </div>
+            <div class="col">
+                <div class="btn-group-vertical btn-group-lg" role="group">
+                    <button type="button-lg" class="btn btn-success" id="start" onclick="startGame()">START</button>
+                    <button type="button" class="btn btn-danger" id="reset" disabled onclick="resetGame()">RESET</button>
+                </div>
+                <p class="text-start" id="scoreBoard"><h3 id="score">SCORE:</h3> </p>
+            </div>
+            <img src="images/dinosaur.png" class="img-fluid d-none" alt="" id="dinosaur">
+            <img src="images/bird.png" class="img-fluid d-none" alt="" id="bird">
+            <img src="images/cactus.png" class="img img-fluid d-none" alt="" id="cactus">
+            <img src="images/clouds.png" class="img-fluid d-none" alt="" id="clouds">
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
