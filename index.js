@@ -11,7 +11,6 @@ const BIRDS_HEIGHT = 50;
 const MAX_JUMP_HEIGHT = 200;
 const TEN = 10;
 
-let ctx = canvas.getContext("2d");
 let dinosaurImage = document.getElementById("dinosaur");
 let birdImage = document.getElementById("bird");
 let cactusImage = document.getElementById("cactus");
@@ -19,6 +18,7 @@ let cloudsImage = document.getElementById("clouds");
 let canvas = document.getElementById("canvas");
 let startButton = document.getElementById("start");
 let resetButton = document.getElementById("reset");
+let ctx = canvas.getContext("2d");
 let score = 0;
 let jumpHeight = 0;
 let isJumping = false;
