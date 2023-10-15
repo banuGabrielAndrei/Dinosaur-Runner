@@ -190,11 +190,11 @@ function drawGame() {
     if (!isGameOver) {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         createBackgroundLine();
-        dinosaur.drawDinosaur();
         for (let k = 0; k < clouds.length; ++k) {
             clouds[k].drawClouds();
             clouds[k].updateClouds();
         }
+        dinosaur.drawDinosaur();
         for (let i = 0; i < cactuses.length; ++i) {
             cactuses[i].drawCactus();
             cactuses[i].upadateCactus();
