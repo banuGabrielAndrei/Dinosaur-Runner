@@ -1,7 +1,7 @@
 const DINO_X = 100;
-const DINO_Y = 250;
+const DINO_Y = 260;
 const DINO_SPEED = 15;
-const DINO_WIDTH = 30;
+const DINO_WIDTH = 40;
 const CACTUSES_WIDTH = 20;
 const CACTUSES_HEIGHT = 60;
 const CACTUSES_Y = 310;
@@ -31,7 +31,7 @@ let dinosaur = {
     dinosaurX: DINO_X,
     dinosaurY: DINO_Y,
     dinosaurWidth: DINO_WIDTH,
-    dinosaurHeight: DINO_WIDTH * 2,
+    dinosaurHeight: DINO_WIDTH + TEN,
     speed: DINO_SPEED,
 
     drawDinosaur() {
